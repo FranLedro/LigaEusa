@@ -84,20 +84,38 @@
     <section id="portfolio">
         <div class="container">
             <center>
-                    <div id="formulario">              
-                        <form class="formu" name="formu" method="post" action="./action.php">
+                    <div id="formulario">             
+                        <form class="formu" method="get" action="jug.php">
                             <fieldset>
-                            <legend>Enter day of league</legend>
-                            <p>
-                                Number:<input type="text" name="numero" size="11" required />  
-                                End date:<input type="text" name="fecha_fin" required />
-            				</p>
-                            <input type="submit" name="Enviar"/>
-                            <input type="reset" name="Resetear"/>
+                                <legend>Enter new player</legend>
+                                <?php
+                                    echo "Hoola esto va";
+                                ?>
+                                <label>Name: </label>
+                                <input type="text" name="nombre" required />
+                                <br/>
+                                <label>Surname: </label>
+                                <input type="text" name="apellido"/>
+                                <br/>
+                                <label>Team: </label>
+                                <select name="teams">
+                                  <option value="Real Madrid">Real Madrid</option>
+                                  <option value="Barcelona">Barcelona</option>
+                                  <option value="Real Betis">Real Betis</option>
+                                </select>
+                                <br/>
+                                <label>User: </label>
+                                <input type="text" name="user" required/>
+                                <button type="submit">Send</button>
+                                <input type="reset" name="Resetear"/>
 
                             </fieldset>
                         </form>
+                        <?php 
+                            
+                        ?>
                     </div>
+                    
                 </center>
         </div>
     </section>
@@ -144,9 +162,7 @@
     <script src="../js/classie.js"></script>
     <script src="../js/cbpAnimatedHeader.js"></script>
 
-    <!-- Contact Form JavaScript -->
-    <script src="../js/jqBootstrapValidation.js"></script>
-    <script src="../js/contact_me.js"></script>
+    
 
     <!-- Custom Theme JavaScript -->
     <script src="../js/freelancer.js"></script>
