@@ -17,8 +17,7 @@
 	    $ape=$_GET['apellido'];
 	    
         $salida;	
-
-
+		
 	    $sql = "INSERT INTO jugadores (nombre, apellidos, equipo_real, id_usuario) VALUES ('$nombre', '$ape', '$equipo', '$id_us')";
 	    
 	    if (mysqli_query($conn, $sql)) {

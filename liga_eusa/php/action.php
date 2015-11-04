@@ -1,12 +1,6 @@
 <html>
-
-
     <head></head>
-
-
     <body>
-
-
     <?php
         $servername = "localhost";
         $username = "eusa15";
@@ -22,11 +16,11 @@
         $numero = $_POST['numero'];
         $fecha_fin = $_POST['fecha_fin'];
         $sql = "INSERT INTO 'jornadas' (numero,fecha_fin) VALUES ('$numero','$fecha_fin')";
-        //$sql = "INSERT INTO jornadas 'eusa15_bdphp'.'jornadas' ('id', 'numero', 'fecha_fin') VALUES         (NULL,'$numero','$fecha_fin')";
+        //$sql = "INSERT INTO jornadas 'eusa15_bdphp'.'jornadas' ('id', 'numero', 'fecha_fin') VALUES (NULL,'$numero','$fecha_fin')";
 
         if (mysqli_query($conn, $sql)) {
             echo "Se ha grabado correctamente en la BD.";
-            echo "Se ha grabado la jornada $numero con la fecha de finalización 					$fecha_fin";
+            echo "Se ha grabado la jornada $numero con la fecha de finalización $fecha_fin";
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 

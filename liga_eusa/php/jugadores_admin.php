@@ -88,9 +88,6 @@
                         <form class="formu" method="get" action="jug.php">
                             <fieldset>
                                 <legend>Enter new player</legend>
-                                <?php
-                                    echo "Hoola esto va";
-                                ?>
                                 <label>Name: </label>
                                 <input type="text" name="nombre" required />
                                 <br/>
@@ -111,9 +108,6 @@
 
                             </fieldset>
                         </form>
-                        <?php 
-                            
-                        ?>
                     </div>
                     
                 </center>
