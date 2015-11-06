@@ -7,15 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="2º DAM - Nuevas Profesiones - Sevilla">
+    <meta name="author" content="">
 
-    <title>Liga EUSA - Play with us.</title>
+    <title>League Eusa</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../css/freelancer.css" rel="stylesheet">
+    <link href="./css/freelancer.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -26,108 +26,137 @@
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.../js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 </head>
 
 <body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#page-top">Liga EUSA</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
     <!-- Header -->
     <header>
+    </header>
+    
+    <!-- Main -->
+    <section id="principal">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Seccion de header
+                    <center>
+                        <a href="#registro" class="btn btn-warning btn-lg" role="button">Register</a>
+                        <a href="#Login" class="btn btn-warning btn-lg" role="button">Login</a>
+                    </center>
+                    <div class="intro-text">
+                        <span class="name">Eusa League</span>
+                        <span class="skills">Play with us</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            Seccion de Portfolio
-        </div>
     </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
+    
+    <!--Register -->
+    <section id="registro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+                <div class="col-lg-12">
+                    <h1>Register</h1>
+                    <form name="registro" id="registerForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>User Name</label>
+                                <input type="username" class="form-control" placeholder="User Name" id="username" required data-validation-required-message="Please enter your User Name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Please enter your password.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Confirm Password</label>
+                                <input type="password" class="form-control" placeholder="Confirm Password" id="confirmPassword" required data-validation-required-message="Please enter your password.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-md-8 col-md-offset-2">
+                                <center>
+                                    <button type="submit" class="btn btn-success btn-lg">Send</button>
+                                </center>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
+            </div>    
+        </div>
+    </section>
+    
+    <!--Login-->
+    <section id="Login">
+    <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                <div class="col-lg-12">
+                    <h1>Login</h1>
+                    <form name="login" id="loginForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>User Name</label>
+                                <input type="username" class="form-control" placeholder="User Name" id="username" required data-validation-required-message="Please enter your User Name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Password</label>
+                                <input type="password" class="form-control" placeholder="Password" id="password" required data-validation-required-message="Please enter your password.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-md-8 col-md-offset-2">
+                                <center>
+                                    <button type="submit" class="btn btn-success btn-lg">Login</button>
+                                </center>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download Theme
-                    </a>
-                </div>
-            </div>
+            </div>    
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            Seccion de contacto
-        </div>
-    </section>
-
+    
     <!-- Footer -->
     <footer class="text-center">
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Liga EUSA</h3>
-                        <h4>Play with us.</h4>
-                        <p>All Description</p>
+                    <div class="footer-col col-md-8 col-md-offset-2">
+                        <center>
+                            <h3>Around the Web</h3>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                </li>
+                            </ul>
+                        </center>    
                     </div>
                 </div>
             </div>
@@ -136,20 +165,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Liga EUSA @2015
+                        Copyright &copy; Your Website 2014
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll visible-xs visible-sm">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
+    
     <!-- jQuery -->
     <script src="../js/jquery.js"></script>
 
